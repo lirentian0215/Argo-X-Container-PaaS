@@ -289,6 +289,11 @@ generate_nezha() {
   cat > nezha.sh << EOF
 #!/usr/bin/env bash
 
+# 哪吒的三个参数
+NEZHA_SERVER=${NEZHA_SERVER}
+NEZHA_PORT=${NEZHA_PORT}
+NEZHA_KEY=${NEZHA_KEY}
+
 # 检测是否已运行
 check_run() {
   [[ \$(pgrep -laf nezha-agent) ]] && echo "哪吒客户端正在运行中" && exit
