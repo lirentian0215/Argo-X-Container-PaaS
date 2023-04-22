@@ -5,9 +5,9 @@ WSPATH=${WSPATH:-'argo'}
 UUID=${UUID:-'07418010-a3e6-410c-b8e7-d9ed73d7fa49'}
 
 # 哪吒三个参数，不需要的话可以留空，删除或在这三行最前面加 # 以注释
-NEZHA_SERVER=flynezha.fly.dev 
-NEZHA_PORT=5555
-NEZHA_KEY=LS1a1sozZYEArz4o7R
+# NEZHA_SERVER=flynezha.fly.dev 
+# NEZHA_PORT=5555
+# NEZHA_KEY=LS1a1sozZYEArz4o7R
 
 generate_config() {
   cat > config.json << EOF
