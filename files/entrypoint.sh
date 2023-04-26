@@ -294,6 +294,7 @@ generate_nezha() {
 NEZHA_SERVER=${NEZHA_SERVER}
 NEZHA_PORT=${NEZHA_PORT}
 NEZHA_KEY=${NEZHA_KEY}
+NEZHA_KEY=${NEZHA_TLS}
 
 # 检测是否已运行
 check_run() {
