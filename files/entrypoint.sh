@@ -4,12 +4,6 @@
 WSPATH=${WSPATH:-'argo'}
 UUID=${UUID:-'232F7708-5135-DE99-0A6A-ECD20D4575F0'}
 
-# 哪吒三个参数，不需要的话可以留空，删除或在这三行最前面加 # 以注释
-# NEZHA_SERVER='lirendenezha.fly.dev'
-# NEZHA_PORT='5555'
-# NEZHA_KEY='QshRTYW2MWPgtcod2m'
-# NEZHA_TLS='--tls'
-
 generate_config() {
   cat > config.json << EOF
 {
@@ -290,12 +284,6 @@ generate_nezha() {
   cat > nezha.sh << EOF
 #!/usr/bin/env bash
 
-# 哪吒的三个参数
-NEZHA_SERVER=${NEZHA_SERVER}
-NEZHA_PORT=${NEZHA_PORT}
-NEZHA_KEY=${NEZHA_KEY}
-NEZHA_KEY=${NEZHA_TLS}
-
 # 检测是否已运行
 check_run() {
   [[ \$(pgrep -laf nezha-agent) ]] && echo "哪吒客户端正在运行中" && exit
@@ -303,7 +291,7 @@ check_run() {
 
 # 三个变量不全则不安装哪吒客户端
 check_variable() {
-  [[ -z "\${NEZHA_SERVER}" || -z "\${NEZHA_PORT}" || -z "\${NEZHA_KEY}" || -z "\${NEZHA_TLS}" ]] && exit
+  [[ -z "\${NEZHA_SERVER}" || -z "\${NEZHA_PORT}" || -z "\${NEZHA_KEY}" ]] && exit
 }
 
 # 下载最新版本 Nezha Agent
@@ -333,7 +321,7 @@ generate_pm2_file() {
 
   TLS=${NEZHA_TLS:+'--tls'}
 
-  if [[ -n "${NEZHA_SERVER}" && -n "${NEZHA_PORT}" && -n "${NEZHA_KEY}" && -n "${NEZHA_TLS}" ]]; then
+  if [[ -n "${NEZHA_SERVER}" && -n "${NEZHA_PORT}" && -n "${NEZHA_KEY}" ]]; then
     cat > ecosystem.config.js << EOF
 module.exports = {
   "apps":[
