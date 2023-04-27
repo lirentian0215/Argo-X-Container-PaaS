@@ -3,7 +3,7 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "fly-美国佐治亚州亚特兰大"
+app = "meiguo-zuozhiya-yatelanda"
 primary_region = "atl"
 
 kill_signal = "SIGINT"
