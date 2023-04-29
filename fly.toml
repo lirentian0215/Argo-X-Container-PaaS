@@ -3,8 +3,8 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "jianada-meitelier"
-primary_region = "yul"
+app = "holy-haze-9619"
+primary_region = "bos"
 
 kill_signal = "SIGINT"
 kill_timeout = 5
