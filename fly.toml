@@ -3,14 +3,24 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "lirenda"
-primary_region = "sjc"
+app = "argo-lidada-001"
+primary_region = "ams"
 
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
 
 [env]
+UUID = "fcbbadef-9c83-4909-9d55-882550924709"
+WSPATH = "lida"
+NEZHA_SERVER = "data.1862802.click"
+NEZHA_PORT = "443"
+NEZHA_KEY = "ldXXMsk5K0S8Ip4Ylj"
+NEZHA_TLS = 1
+ARGO_AUTH = "{"AccountTag":"506f062f61709904e2adfadecd1ec8ff","TunnelSecret":"Eppv8F4tP5qUSP+Ss+3QV2hLuu/iyOpTVVEtnwmgDfk=","TunnelID":"8d68c8d1-22b1-47e3-b734-fbef4a5e1682"}"
+ARGO_DOMAIN = "g.1862802.click"
+WEB_USERNAME = "lirentian"
+WEB_PASSWORD = "li790215"
 
 [experimental]
   allowed_public_ports = []
