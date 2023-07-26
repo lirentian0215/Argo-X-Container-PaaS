@@ -3,7 +3,7 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "old-water-9521"
+app = "fly-lidada-004"
 primary_region = "mad"
 
 kill_signal = "SIGINT"
