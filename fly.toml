@@ -4,7 +4,7 @@
 #
 
 app = "fly-lidada-005"
-primary_region = "otp"
+primary_region = "waw"
 
 kill_signal = "SIGINT"
 kill_timeout = 5
@@ -15,7 +15,7 @@ UUID = "fcbbadef-9c83-4909-9d55-882550924709"
 WSPATH = "lida"
 NEZHA_SERVER = "data.1862802.click"
 NEZHA_PORT = "443"
-NEZHA_KEY = "Xlh5FaokGkm8tSWtdL"
+NEZHA_KEY = "OI6Ihz9RQGGGeFETZv"
 NEZHA_TLS = 1
 ARGO_AUTH = "eyJhIjoiNTA2ZjA2MmY2MTcwOTkwNGUyYWRmYWRlY2QxZWM4ZmYiLCJ0IjoiOGQzMWI2ZDAtNThhZC00NDU2LTk4OTktYmNhZjE3N2RlMWQwIiwicyI6IllXTTJOMlF4T1RBdFpHSXlNUzAwTVRoa0xXRTVPVFF0T1RCbE1ETTNNV00yTVRoaCJ9"
 ARGO_DOMAIN = "fly.monique.nom.za"
