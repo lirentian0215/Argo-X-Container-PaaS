@@ -3,7 +3,7 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "fly-lidada-005"
+app = "fly-lidada-006"
 primary_region = "waw"
 
 kill_signal = "SIGINT"
