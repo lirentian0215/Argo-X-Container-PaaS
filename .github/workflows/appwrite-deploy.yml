@@ -11,6 +11,6 @@ jobs:
       - name: Deploy my function to Appwrite
         uses: rdmchr/Appwrite-Deploy@v0.1
         with:
-          endpoint: 'https://cloud.appwrite.io/console/project-6528e6b8933eec290236/overview/keys'
+          endpoint: 'https://cloud.appwrite.io/console/project-6528e6b8933eec290236/overview/keys/652a30caec463299571e'
           project: '6528e6b8933eec290236'
           key: '${{ secrets.APPWRITE_API_KEY }}'
